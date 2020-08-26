@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Loving timer</title>
+    <script type="text/javascript" src="static/jquery.min.js"></script>
+    <script type="text/javascript" src="static/TimeCircles.js"></script>
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/TimeCircles.css" />
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+            background-color: #fffceb;
+        }
+
+        .container {
+            width: 800px;
+            height: 340px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -400px;
+            margin-top: -170px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        .buttom {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        a {
+            text-decoration:none
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+             <h2>花花同学 💓  爱你每一分每一秒</h2> 
+            <div id="DateCountdown" data-date="2019-08-31 00:21:06"></div>
+        </div>
+    </div>
+    <script>
+        $("#DateCountdown").TimeCircles();
+    </script>
+    <div class="buttom">
+        <span class=""><a target="block" href="http://beian.miit.gov.cn">俞兆鹏 © 2020&nbsp;&nbsp;&nbsp;京ICP备19054334号-1 </a></span>
+    </div>
+</body>
+
+</html>
